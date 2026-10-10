@@ -74,7 +74,7 @@ def try_login(user,password):
      param=(user,password)
      cur.execute(sql,param)
      content= cur.fetchall()
-     if content ==None:
+     if len(content) == 0:
         return False
      session['login']=content[0][0]
      return True
