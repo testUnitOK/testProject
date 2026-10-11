@@ -13,6 +13,8 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 COPY app.py .
+COPY templates/ /templates/
+COPY static/ /static/	
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 COPY requirements.txt .
 
