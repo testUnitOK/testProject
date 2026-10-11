@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<htmL>
+    <meta charset='UTF-8'>
+    <link rel="stylesheet" href="../static/style.css">
+    <body>
+        <div class="content">
+            <h2>会員様ログインサイト</h2>
+            <p class="showMessage">{{ showMsg }} </p>
+            <p class="errorMsg">{{ errorMsg }} </p>
+            <form action="/check_login" method="POST" class="pure-form pure-form-stacked">
+                <fieldset>
+                    <label for="user">ユーザ名</label>
+                    <input type="text" name="user" id="user"><br>
+                    <label for="pw">パスワード</label>
+                    <input type="password" name="pw" id="pw"><br>
+                    <button type="submit" class="pure-button pure-button-primary">
+                        ログイン
+                    </button>
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</htmL>
